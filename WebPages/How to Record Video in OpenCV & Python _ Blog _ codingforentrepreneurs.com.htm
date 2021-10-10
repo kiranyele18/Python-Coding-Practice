@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta charset="utf-8"><base target="_self" href="/"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="google-signin-client_id" content="437210896519-64mdshg04tma84ugbpcm1gki789n6du3.apps.googleusercontent.com">
+<meta property="fb:app_id" content="332106933603142">
+<meta property="og:site_name" content="Coding for Entrepreneurs">
+<meta property="og:url" content="https://www.codingforentrepreneurs.com/blog/how-to-record-video-in-opencv-python/" />
+<meta property="og:type" content="product" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta property="og:image"
+  content="https://static.codingforentrepreneurs.com/media/cfe-blog/how-to-record-video-in-opencv-python/OpenCV-Series-3-Record_Video.jpg" />
+
+<meta property="og:title" content="How to Record Video in OpenCV &amp; Python // Blog // Coding for Entrepreneurs " />
+<meta property="og:description"
+  content="Coding for Entrepreneurs is a series of project-based programming courses designed to teach non-technical founders how to launch and build their own projects. Learn Python, Django, Angular, Typescript, Web Application Development, Web Scraping, and more." />
+ 
+<meta name='twitter:card' content='summary_large_image' />
+<meta name='twitter:image:src' content="https://static.codingforentrepreneurs.com/media/cfe-blog/how-to-record-video-in-opencv-python/OpenCV-Series-3-Record_Video.jpg" />
+<meta name='twitter:site' content='@joincfe' />
+<meta name='twitter:url' content='https://www.codingforentrepreneurs.com/blog/how-to-record-video-in-opencv-python/' />
+<meta name='twitter:description'
+  content='Coding for Entrepreneurs is a series of project-based programming courses designed to teach non-technical founders how to launch and build their own projects. Learn Python, Django, Angular, Typescript, Web Application Development, Web Scraping, and more.' />
+<meta name='twitter:title' content='How to Record Video in OpenCV &amp; Python // Blog // Coding for Entrepreneurs' />
+<link rel="canonical" href="https://www.codingforentrepreneurs.com/blog/how-to-record-video-in-opencv-python/"><link rel="stylesheet" href="https://cdn.plyr.io/3.5.2/plyr.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/fontawesome.min.css" integrity="sha512-shT5e46zNSD6lt4dlJHb+7LoUko9QZXTGlmWWx0qjI9UhQrElRb+Q5DM7SVte9G9ZNmovz2qIaV7IWv0xQkBkw==" crossorigin=""><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/brands.min.css" integrity="sha512-dBL5cY4qTt42J1cfabCHTYR7KMztyd+n4t2GhD6EH/MKWJIIHuEYckJ1nHEpTwIaiDkrjzbc6WyiSkdLP+3INQ==" crossorigin="">
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://static.codingforentrepreneurs.com/static/branding/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://static.codingforentrepreneurs.com/static/branding/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512"  href="https://static.codingforentrepreneurs.com/static/branding/icons/android-icon-512x512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://static.codingforentrepreneurs.com/static/branding/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://static.codingforentrepreneurs.com/static/branding/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://static.codingforentrepreneurs.com/static/branding/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#007cae">
+<meta name="msapplication-TileImage" content="https://static.codingforentrepreneurs.com/static/branding/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#007cae">
+<title>Coding For Entrepreneurs</title><link rel="stylesheet" href="https://static.codingforentrepreneurs.com/static/ui/src.45d595d1.css"></head><body> <script async="" defer="" src="https://player.vimeo.com/api/player.js"></script> <noscript> <div class="bg-cfe my-0 py-5 text-white"> <div class="my-5 py-5"> <div class="col-md-4 mx-auto my-5 py-5 text-center">You need to enable JavaScript to run this app.</div> </div> </div> </noscript>  <div id="cfe" data-csrf="92BNVutqM7dMTXCh8ZTGTZGH0JDRxwKUoqm4YSt91ZYL0QMVeOEfD8uAWTflDetr"> <div class="bg-white bold m-5 min-height p-5 rounded text-center"> <div class="my-5 py-5"> <div class="my-5"> <img class="img-fluid" src="https://static.codingforentrepreneurs.com/static/branding/cfe-max.svg" width="250"> </div> <h4>Welcome to Coding for Entrepreneurs</h4> </div> </div> </div>  <input type="hidden" name="csrfmiddlewaretoken" value="92BNVutqM7dMTXCh8ZTGTZGH0JDRxwKUoqm4YSt91ZYL0QMVeOEfD8uAWTflDetr"> <script src="https://static.codingforentrepreneurs.com/static/ui/src.b00ff921.js"></script> 
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "http://www.codingforentrepreneurs.com/blog/",
+      "name": "Blog",
+      "image": "https://cfe-static.s3.amazonaws.com/media/00/share/coding-for-entrepreneurs-share.jpg"
+    }
+  },
+  {
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "https://www.codingforentrepreneurs.com/blog/how-to-record-video-in-opencv-python/",
+      "name": "How to Record Video in OpenCV &amp; Python",
+      "image": "https://static.codingforentrepreneurs.com/media/cfe-blog/how-to-record-video-in-opencv-python/OpenCV-Series-3-Record_Video.jpg"
+    }
+  }]
+}
+</script>
+
+ </body></html>
